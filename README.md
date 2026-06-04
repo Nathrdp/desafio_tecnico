@@ -1,5 +1,28 @@
 # Desafio Técnico — Desenvolvedor C# / .NET
 
+> ## ✅ Sobre esta entrega
+>
+> Implementação completa do **CRUD de Produtos** proposto neste desafio, seguindo a
+> Clean Architecture e os padrões já existentes nas camadas de Categoria.
+>
+> **Arquivos implementados:**
+> - `ProdutoService.cs` (Application) — regras de negócio
+> - `ProdutoRepository.cs` (Infrastructure) — consultas com EF Core InMemory
+> - `ProdutosController.cs` (API) — endpoints REST
+>
+> **Regras de negócio atendidas:** nome obrigatório (máx. 100 caracteres), preço maior
+> que zero, nome único (case-insensitive), bloqueio de edição de produto inativo e
+> exclusão como *soft delete*.
+>
+> **Endpoints:** `GET` (lista paginada e por id), `POST`, `PUT` e `DELETE` em `/api/produtos`,
+> com os status HTTP corretos (200/201/204/400/404).
+>
+> **Status dos testes:** os **18 testes** unitários (xUnit + Moq) passam (`Passed!`) e a API compila com êxito.
+>
+> O texto original do desafio segue abaixo, preservado.
+
+---
+
 ## Contexto
 
 Você fará parte de um time que desenvolve APIs RESTful em **C# com .NET 8**, seguindo Clean Architecture.
@@ -41,8 +64,8 @@ TesteVeste/
 
 ```bash
 # Clonar o projeto
-git clone https://github.com/Denis-Moreira/TesteJunior.git
-cd TesteVeste
+git clone https://github.com/Nathrdp/desafio_tecnico.git
+cd desafio_tecnico
 
 # Rodar a API (sem precisar de banco de dados)
 dotnet run --project src/TesteVeste.API
@@ -100,6 +123,14 @@ Execute os testes ao finalizar:
 ```bash
 dotnet test
 ```
+
+> **Nota:** este projeto usa o formato de solução novo `TesteVeste.slnx`. Em versões do
+> .NET 8 SDK que ainda não reconhecem `.slnx`, rode `dotnet test` na raiz pode retornar o
+> erro `MSB1009`. Nesse caso, aponte diretamente para o projeto de testes:
+>
+> ```bash
+> dotnet test tests/TesteVeste.Tests/TesteVeste.Tests.csproj
+> ```
 
 **Todos os testes devem passar** (`dotnet test` deve exibir `Passed!`).
 
