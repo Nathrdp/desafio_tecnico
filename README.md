@@ -17,9 +17,8 @@
 > **Endpoints:** `GET` (lista paginada e por id), `POST`, `PUT` e `DELETE` em `/api/produtos`,
 > com os status HTTP corretos (200/201/204/400/404).
 >
-> **Status dos testes:** os **18 testes** unitários (xUnit + Moq) passam (`Passed!`) e a API compila com êxito.
->
-> O texto original do desafio segue abaixo, preservado.
+> **Status dos testes:** os **18 testes** unitários (xUnit + Moq) passam (`Passed!`).
+
 
 ---
 
