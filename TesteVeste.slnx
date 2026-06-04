@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/TesteVeste.API/TesteVeste.API.csproj" />
+    <Project Path="src/TesteVeste.Application/TesteVeste.Application.csproj" />
+    <Project Path="src/TesteVeste.Domain/TesteVeste.Domain.csproj" />
+    <Project Path="src/TesteVeste.Infrastructure/TesteVeste.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/TesteVeste.Tests/TesteVeste.Tests.csproj" />
+  </Folder>
+</Solution>

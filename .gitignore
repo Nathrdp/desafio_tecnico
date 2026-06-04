@@ -1,0 +1,74 @@
+## .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+*.swp
+
+## Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+## NuGet
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+*.nuget.props
+*.nuget.targets
+
+## User-specific files
+*.rsuser
+*.user
+*.userosscache
+*.sln.docstates
+
+## Visual Studio
+.vs/
+*.aps
+*.pch
+*.vspscc
+*.vssscc
+*_i.c
+*_p.c
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+*.VC.db
+*.VC.VC.opendb
+
+## Rider
+.idea/
+*.sln.iml
+
+## JetBrains
+.idea/
+
+## Test results
+TestResults/
+coverage*/
+*.trx
+*.coveragexml
+
+## OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+## Environment
+.env
+.env.local
+appsettings.Development.json

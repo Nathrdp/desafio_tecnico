@@ -1,0 +1,22 @@
+@TesteVeste.API_HostAddress = http://localhost:5285
+
+### 1. Obter token de autenticação
+POST {{TesteVeste.API_HostAddress}}/api/auth/token
+Content-Type: application/json
+
+{
+  "usuario": "admin",
+  "senha": "123456"
+}
+
+### 2. Listar categorias (substitua {{token}} pelo valor retornado acima)
+GET {{TesteVeste.API_HostAddress}}/api/categorias
+Authorization: Bearer {{token}}
+Accept: application/json
+
+### 3. Listar produtos paginados
+GET {{TesteVeste.API_HostAddress}}/api/produtos?pagina=1&tamanhoPagina=10
+Authorization: Bearer {{token}}
+Accept: application/json
+
+###
